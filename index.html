@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Religion Vocabulary Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    select {
+      padding: 3px;
+      margin: 0 2px;
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 20px;
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Religion Vocabulary Quiz</h1>
+  <p>
+    In most of Europe, the Middle East and North Africa during the days of Jesus the Romans were the main 
+    <select>
+      <option value="">--Choose--</option>
+      <option>empire</option>
+      <option>gospel</option>
+      <option>parable</option>
+    </select>, and dominant power in the world. Many people from many lands and cultures lived under the rule of one powerful leader, the Caesar. In the Roman province of Judea, the prophet Jesus of Nazareth spread his teachings about the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>gospel</option>
+      <option>virtue</option>
+      <option>beatitudes</option>
+    </select>, that is the Good News of the Kingdom of God. Later Early Christians told and wrote the story of his life, death, and resurrection. They also communicated by writing letters or 
+    <select>
+      <option value="">--Choose--</option>
+      <option>epistles</option>
+      <option>parables</option>
+      <option>sins</option>
+    </select> to guide and encourage communities of believers.
+  </p>
+
+  <p>
+    Christian tradition teaches us many valuable lessons. One of the greatest mysteries in Christianity is the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>incarnation</option>
+      <option>resurrection</option>
+      <option>grace</option>
+    </select>, the truth that God the Son became fully human while remaining fully God. Jesus was the promised 
+    <select>
+      <option value="">--Choose--</option>
+      <option>messiah</option>
+      <option>pharisee</option>
+      <option>advocate</option>
+    </select> (Christ), who came to save humanity. Christian tradition also teaches that each person has a 
+    <select>
+      <option value="">--Choose--</option>
+      <option>conscience</option>
+      <option>morality</option>
+      <option>virtue</option>
+    </select>, an inner voice that helps them recognize what is right and wrong. When someone commits a 
+    <select>
+      <option value="">--Choose--</option>
+      <option>mortal sin</option>
+      <option>venial sin</option>
+      <option>beatitude</option>
+    </select>, it is a serious choice against God’s law, requiring confession, while a 
+    <select>
+      <option value="">--Choose--</option>
+      <option>venial sin</option>
+      <option>virtue</option>
+      <option>parable</option>
+    </select> is less serious but still weakens our connection with God’s grace.
+  </p>
+
+  <p>
+    Jesus often taught through a 
+    <select>
+      <option value="">--Choose--</option>
+      <option>parable</option>
+      <option>epistle</option>
+      <option>incarnation</option>
+    </select>, using simple, everyday stories to convey spiritual truths. Some groups, like the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>pharisees</option>
+      <option>messiahs</option>
+      <option>virtues</option>
+    </select>, strictly followed the law and their own oral traditions. Jesus had points of agreement and disagreement with them but mostly emphasised 
+    <select>
+      <option value="">--Choose--</option>
+      <option>grace</option>
+      <option>morality</option>
+      <option>empire</option>
+    </select>, a free gift from God that helps people live in love and goodness. He also taught the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>beatitudes</option>
+      <option>epistles</option>
+      <option>sins</option>
+    </select>, showing how to live a happy life in God’s Kingdom through love, justice, and peace.
+  </p>
+
+  <p>
+    Believers are encouraged to practice 
+    <select>
+      <option value="">--Choose--</option>
+      <option>almsgiving</option>
+      <option>parables</option>
+      <option>epistles</option>
+    </select>, offering their time, money, or resources to those in need. This is related to Christian 
+    <select>
+      <option value="">--Choose--</option>
+      <option>morality</option>
+      <option>grace</option>
+      <option>empire</option>
+    </select>, which means following the principles of right and wrong, guided by the beliefs and values of the Bible and the Church. Developing 
+    <select>
+      <option value="">--Choose--</option>
+      <option>virtue</option>
+      <option>messiah</option>
+      <option>parable</option>
+    </select> helps people make good decisions and form good habits. To be engaged in others’ lives we should make prayers of 
+    <select>
+      <option value="">--Choose--</option>
+      <option>intercession</option>
+      <option>resurrection</option>
+      <option>beatitudes</option>
+    </select> on behalf of others like the Saints do for us.
+  </p>
+
+  <p>
+    Finally, Christians celebrate the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>resurrection</option>
+      <option>incarnation</option>
+      <option>advocate</option>
+    </select> of Jesus, his victory over death. These are the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>paschal</option>
+      <option>empire</option>
+      <option>conscience</option>
+    </select> events of his suffering, death, and rising, which are central to faith. The Holy Spirit, called the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>advocate</option>
+      <option>messiah</option>
+      <option>epistle</option>
+    </select>, guides and supports believers. Together, the Father, the Son, and the Holy Spirit form the 
+    <select>
+      <option value="">--Choose--</option>
+      <option>trinity</option>
+      <option>gospel</option>
+      <option>parables</option>
+    </select>, the mystery of one God in three equal persons, a source of love, grace, and guidance for all.
+  </p>
+
+  <button onclick="checkAnswers()">Check Answers</button>
+  <p id="result"></p>
+
+  <script>
+    const answers = [
+      "empire","gospel","epistles","incarnation","messiah","conscience",
+      "mortal sin","venial sin","parable","pharisees","grace","beatitudes",
+      "almsgiving","morality","virtue","intercession","resurrection","paschal",
+      "advocate","trinity"
+    ];
+
+    function checkAnswers() {
+      const selects = document.querySelectorAll("select");
+      let correct = 0;
+      selects.forEach((sel, i) => {
+        if (sel.value.toLowerCase() === answers[i]) {
+          sel.style.border = "2px solid green";
+          correct++;
+        } else {
+          sel.style.border = "2px solid red";
+        }
+      });
+      document.getElementById("result").innerHTML =
+        `You got ${correct} out of ${answers.length} correct.`;
+    }
+  </script>
+</body>
+</html>
